@@ -1,26 +1,36 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { HashRouter as Router, Route } from "react-router-dom";
+import WebsiteLayout from "./WebsiteLayout";
+import FrontPage from "./Pages/CommonPages/indexRedirect/index";
+window.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__ = true;
 
 class App extends Component {
+  state = {
+    loggedIn: false
+  };
+
+  //Check if auth is present in the localstorage
+  componentWillMount() {
+    if (!localStorage.getItem("auth")) {
+      this.setState({
+        loggedIn: true
+      });
+    } else {
+      this.setState({
+        loggedIn: false
+      });
+    }
+  }
+
   render() {
+    //let loggedIn = this.state.loggedIn;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Rishikesh
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Route path="/Website" name="Home" component={WebsiteLayout} />
+          <Route exact={true} path="/" name="index" component={FrontPage} />
+        </div>
+      </Router>
     );
   }
 }

@@ -1,0 +1,35 @@
+.Switch-Dialog-Head {
+	padding: 42px 18px 35px !important;
+}
+.Switch-Dialog-Body {
+	padding: 43px 88px 0px !important;
+}
+.Switch-Dialog-Foot {
+	padding: 43px 88px 50px !important;
+}
+.Switch-Dialog-Head h6,
+.Switch-Dialog-Head h5 {
+	color: #f06620;
+}
+.Switch-Dialog-Head svg {
+	color: #f06620;
+	margin-bottom: 10px;
+}
+.Switch-Dialog-Head img {
+	height: 30px;
+	width: 30px;
+}
+.SwitchMSG {
+	color: #666666 !important;
+	letter-spacing: 0.9px !important;
+	margin-bottom: 5% !important;
+}
+
+@media only screen and (max-width: 1278px) {
+	.Switch-Dialog-Body {
+		padding: 43px 32px 0px !important;
+	}
+	.Switch-Dialog-Foot {
+		padding: 43px 32px 50px !important;
+	}
+}
