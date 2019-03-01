@@ -10,7 +10,7 @@ import Feat4 from "../../../Assets/images/Features/4.svg";
 import Feat5 from "../../../Assets/images/Features/5.svg";
 import Feat6 from "../../../Assets/images/Features/6.svg";
 import TabImage from "../../../Assets/images/Tab.png";
-import RXS from "../../../Assets/images/RXS.jpg";
+import RXS from "../../../Assets/images/RXS1.jpg";
 import PhoneImage from "../../../Assets/images/Phone.png";
 import PlaystoreBtn from "../../../Assets/images/PlaystoreBtn.png";
 import CountUp from "react-countup";
@@ -57,44 +57,36 @@ class Home extends Component {
         <div id="Main-Stats" className="Main-Stats">
           <Grid>
             <Row className="show-grid">
-              <Col xs={12} md={2}>
+              <Col xs={12} md={3}>
                 <div className="Couter-Card" align="center">
                   <h1>
-                    <CountUp end={521} />
+                    <CountUp end={24} />X<CountUp end={7} />
                   </h1>
-                  <p>Counter 1</p>
+                  <p>Fully Automated Diagnostic Laboratory</p>
                 </div>
               </Col>
-              <Col xs={12} md={2}>
+              <Col xs={12} md={3}>
                 <div className="Couter-Card" align="center">
                   <h1>
-                    <CountUp end={49983} />
+                    <CountUp end={50000} />+
                   </h1>
-                  <p>Counter 2</p>
+                  <p>Specimens</p>
                 </div>
               </Col>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={3}>
                 <div className="Couter-Card" align="center">
                   <h1>
-                    &#8377; <CountUp end={214} /> Million
+                    &#8377; <CountUp end={200000} /> +
                   </h1>
-                  <p>Counter 3</p>
+                  <p>Chemical Chemistry Investigations Per Night</p>
                 </div>
               </Col>
-              <Col xs={12} md={2}>
+              <Col xs={12} md={3}>
                 <div className="Couter-Card" align="center">
                   <h1>
-                    <CountUp end={8990} />
+                    <CountUp end={24} />X<CountUp end={7} />
                   </h1>
-                  <p>Counter 4</p>
-                </div>
-              </Col>
-              <Col xs={12} md={2}>
-                <div className="Couter-Card" align="center">
-                  <h1>
-                    <CountUp end={98} />.<CountUp end={6} />%
-                  </h1>
-                  <p>Counter 5</p>
+                  <p>Air Cargo Function</p>
                 </div>
               </Col>
             </Row>

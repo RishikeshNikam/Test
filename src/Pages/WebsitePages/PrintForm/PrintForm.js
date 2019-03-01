@@ -29,7 +29,8 @@ class Contact extends Component {
       Pan: "",
       GSTN: "",
       BAName: "",
-      BANum: ""
+      BANum: "",
+      UTR: ""
     };
     this.PrintForm = this.PrintForm.bind(this);
   }
@@ -55,7 +56,8 @@ class Contact extends Component {
       Pan: localStorage.getItem("Pan"),
       GSTN: localStorage.getItem("GSTN"),
       BAName: localStorage.getItem("BAName"),
-      BANum: localStorage.getItem("BANum")
+      BANum: localStorage.getItem("BANum"),
+      UTR: localStorage.getItem("UTR")
     });
   }
 
@@ -90,7 +92,6 @@ class Contact extends Component {
     });
 
   PrintForm() {
-    alert("fdjhdshf");
     var divElements = document.getElementById("PrintFormDiv").innerHTML;
     var oldPage = document.body.innerHTML;
 
@@ -278,6 +279,14 @@ class Contact extends Component {
                             </td>
                             <td>
                               <h4>{this.state.BANum}</h4>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <h4>UTR Number</h4>
+                            </td>
+                            <td>
+                              <h4>{this.state.UTR}</h4>
                             </td>
                           </tr>
                         </Table>

@@ -76,7 +76,7 @@ class ButtonAppBar extends React.Component {
               <NavItem eventKey={5} href="#">
                 Contact Us
               </NavItem>
-              <NavItem eventKey={6} href="#/Website/SignUp">
+              <NavItem eventKey={6} href="#/Website/ProfileForm">
                 <Button bsStyle="danger">Register Now</Button>
               </NavItem>
             </Nav>

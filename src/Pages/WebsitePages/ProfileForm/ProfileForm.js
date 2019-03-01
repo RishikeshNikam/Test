@@ -44,7 +44,8 @@ class Contact extends Component {
       Pan: "",
       GSTN: "",
       BAName: "",
-      BANum: ""
+      BANum: "",
+      UTR: ""
     };
   }
 
@@ -541,6 +542,26 @@ class Contact extends Component {
                                   shrink: true
                                 }}
                                 onChange={this.RegistrationFormData("BANum")}
+                              />
+                            </FormControl>
+                          </Col>
+                          <Col xs={6} md={6}>
+                            <FormControl required fullWidth>
+                              <TextField
+                                error={false}
+                                id="UTR"
+                                name="UTR"
+                                label="UTR Number"
+                                type="text"
+                                value={this.state.UTR}
+                                helperText={this.state.dobError}
+                                fullWidth
+                                margin="normal"
+                                variant="outlined"
+                                InputLabelProps={{
+                                  shrink: true
+                                }}
+                                onChange={this.RegistrationFormData("UTR")}
                               />
                             </FormControl>
                           </Col>
