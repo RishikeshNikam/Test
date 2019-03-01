@@ -76,7 +76,7 @@ class Home extends Component {
               <Col xs={12} md={3}>
                 <div className="Couter-Card" align="center">
                   <h1>
-                    &#8377; <CountUp end={200000} /> +
+                    <CountUp end={200000} /> +
                   </h1>
                   <p>Chemical Chemistry Investigations Per Night</p>
                 </div>
