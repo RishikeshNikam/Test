@@ -1,3 +1,6 @@
+/**
+ * 1. Api call to get website statistics.
+ */
 export function WebStats() {
   return fetch("https://z2p.zup.today/users/websiteTotal", {
     method: "POST",

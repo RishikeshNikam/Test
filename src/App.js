@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-import WebsiteLayout from "./WebsiteLayout";
-import FrontPage from "./Pages/CommonPages/indexRedirect/index";
-window.__MUI_USE_NEXT_TYPOGRAPHY_VARIANTS__ = true;
+import Welcome from "./Pages/CommonPages/Login/Welcome";
 
 class App extends Component {
   state = {
@@ -23,12 +21,10 @@ class App extends Component {
   }
 
   render() {
-    //let loggedIn = this.state.loggedIn;
     return (
       <Router>
         <div>
-          <Route path="/Website" name="Home" component={WebsiteLayout} />
-          <Route exact={true} path="/" name="index" component={FrontPage} />
+          <Route exact={true} path="/" name="Welcome" component={Welcome} />
         </div>
       </Router>
     );
