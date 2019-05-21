@@ -14,9 +14,9 @@ import styles from "./style.js";
 import { Typography } from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import AppBar from "@material-ui/core/AppBar";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import classNames from "classnames";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import HelpIcon from "@material-ui/icons/HelpOutline";
 
 class Welcome extends Component {
   constructor() {
@@ -79,8 +79,8 @@ class Welcome extends Component {
             <Grid
               className={classes.LeftEditer}
               item
-              xs={6}
-              sm={6}
+              xs={12}
+              sm={12}
               md={6}
               lg={6}
               container
@@ -155,12 +155,19 @@ class Welcome extends Component {
             <Grid
               className={classes.RightEditer}
               item
-              xs={6}
-              sm={6}
+              xs={12}
+              sm={12}
               md={6}
               lg={6}
               container
             >
+              <div
+                style={{
+                  borderBottom: "1px solid #000"
+                }}
+              >
+                <Button>Undo</Button>
+              </div>
               <Paper
                 onClick={this._onMouseMove.bind(this)}
                 className={classes.Editer}
@@ -184,26 +191,31 @@ class Welcome extends Component {
         </div>
         <MuiThemeProvider theme={this.getMuiTheme()}>
           <AppBar position="fixed" className={classes.appBarBottom}>
-            <Toolbar>
-              <IconButton
-                color="inherit"
-                aria-label="Open drawer"
-                onClick={this.handleDrawerToggle}
-                className={classes.menuButton}
+            <Toolbar style={{ padding: 0 }}>
+              <div className={classes.grow}>
+                <a
+                  href="#"
+                  className={classNames(classes.footerBtn, classes.BC1)}
+                  variant="contained"
+                  color="primary"
+                >
+                  <HelpIcon />
+                </a>
+                <Button
+                  className={classNames(classes.footerBtn, classes.BC2)}
+                  variant="contained"
+                  color="primary"
+                >
+                  Option 2
+                </Button>
+              </div>
+              <Button
+                className={classes.footerBtn}
+                variant="contained"
+                color="primary"
               >
-                <MenuIcon />
-              </IconButton>
-              <Typography
-                variant="h6"
-                onClick={e => {
-                  this.setState({ mobileOpen: true });
-                }}
-                color="inherit"
-                noWrap
-                style={{ color: "#696969" }}
-              >
-                Fabric Editing Panel
-              </Typography>
+                Preview and checkout
+              </Button>
             </Toolbar>
           </AppBar>
         </MuiThemeProvider>

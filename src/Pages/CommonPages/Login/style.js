@@ -9,6 +9,9 @@ const styles = theme => ({
     margin: theme.spacing.unit,
     backgroundColor: theme.palette.secondary.main
   },
+  grow: {
+    flexGrow: 1
+  },
   CustomHr: {
     border: "1px solid #e0e0e0",
     marginBottom: "5%"
@@ -40,17 +43,29 @@ const styles = theme => ({
   },
   Editer: {
     backgroundColor: "#fff",
-    border: "3px dashed #7cb5e6",
-    borderRadius: "20px",
+    border: "20px solid #e0f1ff",
     height: "450px",
     width: "100%",
     margin: "5% 10%",
     overflow: "hidden",
-    cursor: "pointer"
+    cursor: "pointer",
+    boxShadow: "none"
   },
   appBarBottom: {
     bottom: 0,
     top: "auto"
+  },
+  footerBtn: {
+    boxShadow: "none",
+    borderRadius: 0,
+    lineHeight: "3.6",
+    padding: "6px 42px"
+  },
+  BC1: {
+    backgroundColor: "#5e5e63"
+  },
+  BC2: {
+    backgroundColor: "#444446"
   }
 });
 
