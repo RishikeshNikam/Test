@@ -164,9 +164,6 @@ body {
   background-color: #f2f2f2 !important;
 }
 .root {
-  background-image: url("../../../Assets/images/Fill.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .Statistics h3 {
   color: #c7c7c7;
@@ -372,7 +369,7 @@ body {
     padding-top: 7%;
   }
   .root {
-    background-image: url("../../../Assets/images/Fill.jpg");
+    /* background-image: url("../../../Assets/images/Fill.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -409,7 +406,7 @@ body {
     margin-left: auto;
   }
   .root {
-    background-image: url("../../../Assets/images/Fill.jpg");
+    /* background-image: url("../../../Assets/images/Fill.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -483,7 +480,7 @@ body {
     margin-left: auto;
   }
   .root {
-    background-image: url("../../../Assets/images/Fill.jpg");
+    /* background-image: url("../../../Assets/images/Fill.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;

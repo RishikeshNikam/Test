@@ -1,3 +1,5 @@
+import Graph from "../../../Assets/images/graph.jpg";
+
 const styles = theme => ({
   paper: {
     marginTop: theme.spacing.unit * 2,
@@ -27,7 +29,13 @@ const styles = theme => ({
     paddingTop: "4%",
     backgroundColor: "#fff"
   },
-  RightEditer: { backgroundColor: "#fff", width: "100%" },
+  RightEditer: {
+    backgroundImage: `url(${Graph})`,
+    backgroundRepeat: "repeat",
+    backgroundSize: "60%",
+    width: "100%",
+    display: "block"
+  },
   LeftEditer: { backgroundColor: "#f6f6f6" },
   LeftEditerInner: {
     margin: "5%",
@@ -36,8 +44,17 @@ const styles = theme => ({
     width: "100%"
   },
   FabricThumbnailPreview: {
+    display: "flex",
+
     "& img": {
+      padding: "6px",
       width: "150px",
+      border: "1px solid #e2e2e2"
+    },
+    "& svg": {
+      padding: "10%",
+      width: "150px",
+      height: "113px !important",
       border: "1px solid #e2e2e2"
     }
   },
@@ -66,6 +83,64 @@ const styles = theme => ({
   },
   BC2: {
     backgroundColor: "#444446"
+  },
+  iconBtn: {
+    padding: "20px 42px"
+  },
+  list: {
+    width: 250
+  },
+  FabricIcon: {
+    width: 92,
+    border: "1px solid #e0e0e0",
+    padding: "2%"
+  },
+  StampIcon: {
+    width: 50
+  },
+  ColorPreview: {
+    border: "1px solid #e0e0e0",
+    height: "100% !important",
+    padding: "2%",
+    "& svg": {
+      width: "100%",
+      height: "100% !important"
+    }
+  },
+  SketchPicker: {
+    boxShadow: "none !important"
+  },
+  stampDetails: {
+    width: "100%",
+    marginLeft: "5%",
+    marginTop: "2%",
+    "& h6": {
+      marginTop: "3%"
+    }
+  },
+  inlineFlex: {
+    display: "inline-flex"
+  },
+  loader: {
+    height: "100%",
+    width: "100%",
+    position: "absolute",
+    background: "rgba(255, 255, 255, 0.8117647058823529)",
+    zIndex: "13000"
+  },
+  AddStampBtn: {
+    marginTop: "-24px",
+    marginLeft: "10px",
+    "& svg": {
+      width: "1em",
+      height: "auto !important",
+      padding: 0,
+      border: "none",
+      marginTop: "-5%"
+    }
+  },
+  df: {
+    display: "flex"
   }
 });
 
