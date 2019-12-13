@@ -141,6 +141,15 @@ const styles = theme => ({
   },
   df: {
     display: "flex"
+  },
+  Download_image: {
+    "& svg": {
+      border: "1px solid #e0e0e0"
+    },
+    "& image": {
+      width: "100% !important",
+      height: "100% !important"
+    }
   }
 });
 

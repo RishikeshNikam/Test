@@ -345,12 +345,18 @@ class Welcome extends Component {
   };
 
   downloadCanvas = () => event => {
-    var svg = this.canvas.toSVG();
-
     this.setState({
-      PreviewResultDialog: true
+      loading: true
     });
+    var svg = this.canvas.toSVG({
+      suppressPreamble: true
+    });
+
     setTimeout(() => {
+      this.setState({
+        loading: false,
+        PreviewResultDialog: true
+      });
       $("#Download_image").html(svg);
     }, 2000);
   };
@@ -715,6 +721,9 @@ class Welcome extends Component {
           </Dialog>
 
           <Dialog
+            fullWidth={true}
+            scroll="body"
+            maxWidth="lg"
             open={this.state.PreviewResultDialog}
             onClose={this.StampColorPickerClose()}
             aria-labelledby="alert-dialog-title"
@@ -722,7 +731,7 @@ class Welcome extends Component {
           >
             <DialogTitle id="alert-dialog-title">{"Preview"}</DialogTitle>
             <DialogContent>
-              <div id="Download_image"></div>
+              <div className={classes.Download_image} id="Download_image"></div>
             </DialogContent>
             <DialogActions>
               <Button
