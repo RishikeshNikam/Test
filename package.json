@@ -11,7 +11,7 @@
 		"@material-ui/core": "^3.5.1",
 		"@material-ui/icons": "^3.0.1",
 		"@material-ui/lab": "^3.0.0-alpha.16",
-		"axios": "^0.18.0",
+		"axios": "^0.21.1",
 		"bootstrap": "^3.3.7",
 		"fabric": "^3.4.0",
 		"i": "^0.3.6",
